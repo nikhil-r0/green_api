@@ -1,0 +1,46 @@
+{
+  "plants": [
+    {
+      "name": "Tomato",
+      "quantity": 50,
+      "growing_cost": 15,
+      "market_cost": 30,
+      "climatic_conditions": {
+        "temp_min": 20,
+        "temp_max": 30,
+        "humidity_min": 50,
+        "humidity_max": 70,
+        "sunlight_min": 6,
+        "sunlight_max": 8
+      }
+    },
+    {
+      "name": "Spinach",
+      "quantity": 100,
+      "growing_cost": 10,
+      "market_cost": 25,
+      "climatic_conditions": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "humidity_min": 40,
+        "humidity_max": 60,
+        "sunlight_min": 4,
+        "sunlight_max": 6
+      }
+    },
+    {
+      "name": "Potato",
+      "quantity": 75,
+      "growing_cost": 12,
+      "market_cost": 20,
+      "climatic_conditions": {
+        "temp_min": 18,
+        "temp_max": 28,
+        "humidity_min": 45,
+        "humidity_max": 65,
+        "sunlight_min": 5,
+        "sunlight_max": 7
+      }
+    }
+  ]
+}
