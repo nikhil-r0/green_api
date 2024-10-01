@@ -6,13 +6,13 @@ url = "http://127.0.0.1:5000/recommend_crops"
 
 # Sample data for testing
 test_data = {
-    "terrace_size": 100,
-    "latitude": 12,
-    "longitude": 77,
+    "terrace_size": 120,
+    "latitude": 13.07,
+    "longitude": 77.61,
     "savings_weight": 0.3,
     "weight_carbon_absorption": 0.7,
-    "budget": 2000,
-    "types": ["Fruits", "Vegetables"]
+    "budget": 20000,
+    "types": ["Fruits", "Vegetables","Legumes"]
 }
 
 def test_api():
