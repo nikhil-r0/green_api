@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from models.plant_optm import recomend_crops
+from models.plant_optm import recommend_crops
 import logging
 
 # Set up logging
@@ -13,8 +13,9 @@ def api_recommend_crops():
     try:
         logger.info("Received request for /recommend_crops")
         data = request.json
+        logger.debug(f"Request data: {data}")
 
-        result = recomend_crops(
+        result = recommend_crops(
             terrace_size=data['terrace_size'],
             latitude=data['latitude'],
             longitude=data['longitude'],
@@ -23,13 +24,12 @@ def api_recommend_crops():
             total_budget=data['budget'],
             selected_categories=data['types']
         )
-        logger.info("recomend_crops function completed")
-        logger.debug(f"Result: {result}")
 
+        logger.info("Crops recommendation API completed successfully")
         return jsonify(result)
     except Exception as e:
-        logger.exception(f"An error occurred in api_recommend_crops: {str(e)}")
+        logger.error(f"Error in /recommend_crops API: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host =  '0.0.0.0',port = 5000,debug=True)
+    app.run(debug=True)
