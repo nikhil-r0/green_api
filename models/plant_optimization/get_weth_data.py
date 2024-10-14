@@ -57,5 +57,5 @@ if __name__ == "__main__":
     start_date = "2024-09-01"
     end_date = "2024-09-20"
     
-    weather_data = get_weather_data(latitude, longitude, start_date, end_date)
+    weather_data = get_weather_data(latitude, longitude)
     print(weather_data)

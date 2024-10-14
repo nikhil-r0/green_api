@@ -1,1 +1,8 @@
 env
+crop_ensemble_model.joblib
+scaler.joblib
+models/plant_optimization/__pycache__
+models/plant_optimization/market_price_model3.pkl
+models/chat_bot/chatbot_model_onnx
+models/chat_bot/__pycache__
+models/__pycache__
